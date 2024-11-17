@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <!-- AOS link -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- Custom Style Sheet -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
@@ -73,8 +76,10 @@
             </div>
             <div class="banner_img_contant">
                 <div class="left_col">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, eos nam voluptatem quaerat
-                        dolore fugit ab debitis!</p>
+                    <p>Hi there!
+
+                        I’m [Redoy Krishna Dash], a passionate web Designer & developer ready to take your projects to
+                        the next level. With expertise in [mention key skills, e.g., HTML, CSS, JavaScript, etc.]!</p>
                     <a href="#"> Hire me!</a>
 
                     <div class="star_rating">
@@ -100,7 +105,7 @@
                         <span>Completed Projects </span>
                     </div>
                     <div class="client_rating">
-                        <h2>90%</h2>
+                        <h2>96%</h2>
                         <span>Client Rating</span>
                     </div>
 
@@ -224,7 +229,7 @@
                             <span>Web Designer & Developer </span>
                         </div>
                         <div>
-                            EUITSols Ltd.
+                            <p>EUITSols Ltd.</p>
                         </div>
                     </div>
                     <div class="experience">
@@ -269,7 +274,7 @@
     <!-- Work Section -->
     <Section class="latest_work_section" id="latest_work_section">
         <div class="container">
-            <H2>Latest Work</H2>
+            <h2>Latest Work</h2>
             <div class="gallery">
                 <div class="gallery_item">
                     <img src="image/3101839.jpg" alt="">
@@ -510,18 +515,26 @@
             </div>
             <div class="socket_section">
                 <div>
-                    <span>©2024- Design by Redoy Krishna Dash</span>
+                    <span>©2024- Copyright All Right Reserved</span>
                 </div>
                 <div>
                     <i class="fa-brands fa-facebook-f"></i>
                     <i class="fa-brands fa-twitter"></i>
                     <i class="fa-brands fa-instagram"></i>
                 </div>
-                <div><a href="mailto:redoydash01@gmail.com">redoydash01@gmail.com</a></div>
+                <div><a href="mailto:redoydash01@gmail.com">Design by Redoy Krishna Dash</a></div>
             </div>
 
         </div>
     </Footer>
+
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- Script -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -554,27 +567,24 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
         $(document).ready(function () {
-            // Add smooth scrolling to all links
             $("a").on('click', function (event) {
 
-                // Make sure this.hash has a value before overriding default behavior
                 if (this.hash !== "") {
-                    // Prevent default anchor click behavior
+
                     event.preventDefault();
 
-                    // Store hash
+
                     var hash = this.hash;
 
-                    // Using jQuery's animate() method to add smooth page scroll
-                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+
                     $('html, body').animate({
                         scrollTop: $(hash).offset().top
                     }, 800, function () {
 
-                        // Add hash (#) to URL when done scrolling (default click behavior)
+
                         window.location.hash = hash;
                     });
-                } // End if
+                }
             });
         });
     </script>
